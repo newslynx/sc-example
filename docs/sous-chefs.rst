@@ -3,7 +3,6 @@ Sous Chefs
 -------------
 **sc-example** provides access to the following Sous Chefs
 
-RUNS sc_example.SayMyName
 Say My Name
 ~~~~~~~~~~~
 
@@ -21,7 +20,7 @@ not execute the SousChef's ``load`` method.
 
     $ newslynx sc sc_example/say_my_name.yaml option=value1
 
-Alernatively pass in a recipe file
+Alternatively pass in a recipe file
 
 .. code:: bash
 
@@ -42,7 +41,7 @@ Create a Recipe with this Sous Chef with command line options.
 
     $ newslynx api recipes create sous_chef=say-my-name **options
 
-Alerternatively pass in a recipe file.
+Alternatively pass in a recipe file.
 
 .. code:: bash
 
@@ -55,7 +54,7 @@ Save the outputted ``id`` of this recipe, and execute it via the API.
 
     $ newslynx api recipes cook id=<id>
 
-Alernatively, run the Recipe, passing in arbitrary runtime options, and
+Alternatively, run the Recipe, passing in arbitrary runtime options, and
 stream it's output: **NOTE** Will not execute the SousChef's ``load``
 method.
 
