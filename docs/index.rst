@@ -24,7 +24,7 @@ Requires ``nose``
 
     $ nosetests
 
-Documenation
+Documentation
 ------------
 
 Documentation for ``sc-example`` is hosted on `Read The
@@ -38,7 +38,7 @@ It's generated via the following steps
 -  runs ``newslynx sc-docs sc_example -f rst`` to generate documentation
    for all the Sous Chefs in ``sc-example`` and saves the output to
    `docs/sous-chefs.rst <https://github.com/newslynx/sc-example/blob/master/docs/sous-chefs.rst>`__
--  Builds Sphinx Documentaiton from these files.
+-  Builds Sphinx Documentation from these files.
 
 Continuous Integration
 ----------------------
@@ -111,7 +111,7 @@ What's in this module ?
 
       -  ``make sous_chef_docs``
 
-         -  Programmtically generates `Sous Chef
+         -  Programmatically generates `Sous Chef
             documentation <https://github.com/newslynx/sc-example/blob/master/docs/sous-chefs.rst>`__
             by running
             ``newslynx sc-docs sc_example/ --format=rst > docs/sous-chefs.rst``.
