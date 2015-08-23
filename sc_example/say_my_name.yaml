@@ -1,0 +1,14 @@
+
+name: Say My Name
+slug: say-my-name
+description: Conveniently says your name.
+runs: sc_example.SayMyName
+options:
+    my_name:
+        input_type: text
+        value_types:
+            - string
+        required: true
+        help:
+            description: Your name
+            placeholder: Merlynne
