@@ -10,22 +10,6 @@ Say My Name
 -  This Sous Chef runs the python module ``sc_example.SayMyName``.
 -  API Slug: ``say-my-name``
 
-Development
-^^^^^^^^^^^
-
-Pass runtime options to ``say-my-name`` and stream output. **NOTE** Will
-not execute the SousChef's ``load`` method.
-
-.. code:: bash
-
-    $ newslynx sc sc_example/say_my_name.yaml option=value1
-
-Alternatively pass in a recipe file
-
-.. code:: bash
-
-    $ newslynx sc sc_example/say_my_name.yaml --recipe=recipe.yaml
-
 API Usage
 ^^^^^^^^^
 
@@ -61,6 +45,22 @@ method.
 .. code:: bash
 
     $ newslynx api recipes cook id=<id> --passthrough **options
+
+Development
+^^^^^^^^^^^
+
+Pass runtime options to ``say-my-name`` and stream output. **NOTE** Will
+not execute the SousChef's ``load`` method.
+
+.. code:: bash
+
+    $ newslynx sc sc_example/say_my_name.yaml option=value1
+
+Alternatively pass in a recipe file
+
+.. code:: bash
+
+    $ newslynx sc sc_example/say_my_name.yaml --recipe=recipe.yaml
 
 Options
 ^^^^^^^
