@@ -6,12 +6,43 @@ sc-example
 Installation
 ------------
 
+Production
+~~~~~~~~~~
+
+To install ``sc-example`` for an active installation of
+``newslynx-core``, clone it and copy into ``~/.newslynx/sous-chefs``
+
 .. code:: bash
 
-    $ mkvirtualenv sc-example
     $ git clone https://github.com/newslynx/sc-example.git
-    $ cd sc-example
+    $ mv sc-example/ ~/.newslynx/sous-chefs/
+
+Now install it within the same virtual environment as ``newslynx``:
+
+.. code:: bash
+
+    $ cd ~/.newslynx/sous-chefs/sc-example/
     $ pip install .
+
+... and if you're running ``newslynx`` as ``sudo``
+
+.. code:: bash
+
+    $ cd ~/.newslynx/sous-chefs/sc-example/ 
+    $ sudo pip install .
+
+Finally, run ``newslynx sc-sync`` to ``sc-example``'s Sous Chefs for all
+organizations.
+
+.. code:: bash
+
+    $ newslynx sc-sync
+
+Development
+~~~~~~~~~~~
+
+If you want to run this SousChef on it's own environment, install it in
+a separate virutal environ
 
 Tests
 -----
@@ -20,7 +51,7 @@ Requires ``nose``
 
 .. code:: bash
 
-    $ nosetests
+    $ make all_tests
 
 Documentation
 -------------
